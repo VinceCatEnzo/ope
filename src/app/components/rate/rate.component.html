@@ -32,7 +32,7 @@
 				</thead>
 				<tbody>
 					<tr class="cursor" (click)="gotToLink(soinVisage.link)" *ngFor="let soinVisage of soinsVisage">
-						<td class="indent" scope="row">{{ soinVisage.title }}</td>
+						<td scope="row">{{ soinVisage.title }}</td>
 						<td><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></td>
 						<td class="right"><span class="price bold">{{ soinVisage.price | number:'1.2' }}&nbsp;<i class="fa fa-eur" aria-hidden="true"></i></span></td>
 					</tr>
@@ -51,7 +51,7 @@
 				</thead>
 				<tbody>
 					<tr class="cursor" (click)="gotToLink(soinCorp.link)" *ngFor="let soinCorp of soinsCorp">
-						<td class="indent" scope="row">{{ soinCorp.title }}</td>
+						<td scope="row">{{ soinCorp.title }}</td>
 						<td><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></td>
 						<td class="right"><span class="price bold">{{ soinCorp.price | number:'1.2' }}&nbsp;<i class="fa fa-eur" aria-hidden="true"></i></span></td>
 					</tr>
@@ -70,7 +70,7 @@
 				</thead>
 				<tbody>
 					<tr class="cursor" (click)="gotToLink(manucure.link)" *ngFor="let manucure of manucures">
-						<td class="indent" scope="row">{{ manucure.title }}</td>
+						<td scope="row">{{ manucure.title }}</td>
 						<td ><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></td>
 						<td class="right"><span class="price bold">{{ manucure.price | number:'1.2' }}&nbsp;<i class="fa fa-eur" aria-hidden="true"></i></span></td>
 					</tr>
