@@ -12,7 +12,7 @@ import { slideInDownAnimation } from '../../animations';
 export class NavComponent implements OnInit {
     isCollapsed = true;
     isAnimated = 'inactive';
-    mobileNumberr = '+33769857143';
+    mobileNumber = '+33769857143';
     toolTipHome = 'Acceuil';
     toolTipEpilation = 'Voir les offres épilations';
     toolTipSoins = 'Voir les offres soins';

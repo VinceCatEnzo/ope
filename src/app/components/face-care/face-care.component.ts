@@ -14,7 +14,7 @@ export class FaceCareComponent implements OnInit {
   constructor(private soinsService: SoinsService) { }
 
   ngOnInit() {
-  	this.getSoinsVisage();
+    this.getSoinsVisage();
   }
 
   getSoinsVisage(): void {
