@@ -1,0 +1,62 @@
+<section id="contact">
+
+    <div class="container">
+        <hr>
+        <div class="row">
+            <div class="col-lg-12 col-lg-offset-2 text-center margin-top-25">
+                <h2 class="section-heading">Restons en contacte !</h2>
+                <p>Contactez moi et je vous aiderais a mettre en place votre programme beauté!</p>
+            </div>
+            <div class="col-lg-6 col-lg-offset-2 text-center margin-top-25">
+                <i class="fa fa-phone fa-3x sr-contact"></i>
+                <p><a href="tel:+33769857143"> Appelez moi 07 69 85 71 43 </a></p>
+            </div>
+            <div class="col-lg-6 text-center margin-top-25 cursor" (click)="open(content)">
+                <i class="fa fa-street-view fa-3x sr-contact"></i>
+                <p>18, rue marchand 91100 Corbeil-essonnes - voir la carte <i class="fa fa-chevron-circle-right" aria-hidden="true"></i></p>
+
+            </div>
+            <div class="col-lg-6 text-center margin-top-25">
+                <p>
+                    <i class="fa fa-facebook-official fa-3x sr-contact"></i>
+                </p>
+                
+
+                <div class="fb-page" 
+                data-href="https://www.facebook.com/auxptitssoinsdestelle"
+                data-width="380" 
+                data-hide-cover="false"
+                data-show-facepile="false" 
+                data-show-posts="false"></div>
+
+
+            </div>
+            <div class="col-lg-6 text-center margin-top-25">
+                <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+                <p><a href="mailto:xxxx@xxxx.xxx">xxxx@sxxxx.xxx</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+<ng-template #content let-c="close" let-d="dismiss">
+    <div class="modal-header">
+        <h4 class="modal-title">18 rue Marchand 91100 Corbeil-Essonnes</h4>
+        <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    </div>
+    <div class="modal-body">
+        <ul class="list-none">
+            <li>Vous pouvez me retrouver au 18 rue Marchand.</li>
+            <li>Il sagit d'une rue perpendiculaire de rue de Paris (National 7), et du concervatoire de Corbeil-essonnes.</li>
+        </ul>
+        <img class="padding-img" src="assets/map.jpg" alt="Generic placeholder image" width="100%" height="100%">
+        <hr>
+        <ul class="list-none">
+            <li> Ci dessous vous pouvez retouver l'entrée de l'institue </li>
+            <li> Vous sonner à l'interphone et je me ferais un plaisir de vous ouvrir </li>
+        </ul>
+        <img class="padding-img" src="assets/DSC08964.JPG" alt="Generic placeholder image" width="100%" height="100%">
+        <hr>
+    </div>
+</ng-template>

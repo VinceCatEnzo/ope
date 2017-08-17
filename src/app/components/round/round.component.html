@@ -1,0 +1,38 @@
+<div class="container">
+	<div class="row round">
+		<div class="col-lg-4" *ngFor="let soin of soins">
+			<section id="{{ soin.link }}">
+				<div class="imageBlock">
+					<a class="" routerLink="{{ soin.link }}"> 
+							<img class="rounded-circle" src="{{ soin.image }}" alt="Generic placeholder image" width="150" height="150">
+						</a>
+				</div>
+				<h2 class="	bold">{{ soin.title }}</h2>
+				<p class="justify">{{ soin.texte }}</p>
+				<p>
+					<span class="price bold"><i class="fa fa-money" aria-hidden="true"></i>&nbsp;Tarif&nbsp;:&nbsp;{{ soin.price | number:'1.2' }}&nbsp; <i class="fa fa-eur" aria-hidden="true"></i></span>
+				</p>
+				<p>
+					<i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;Durée&nbsp;:&nbsp;{{ soin.time }}
+				</p>
+
+			</section>
+		</div>
+	</div>
+</div>
+
+
+<ng-template #content let-c="close" let-d="dismiss">
+	<div class="modal-header">
+		<h4 class="modal-title">Modal title</h4>
+		<button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+	</div>
+	<div class="modal-body">
+		<p>One fine body&hellip;</p>
+	</div>
+	<div class="modal-footer">
+		<button type="button" class="btn btn-secondary" (click)="c('Close click')">Close</button>
+	</div>
+</ng-template>

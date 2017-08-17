@@ -1,0 +1,55 @@
+@import "~bootstrap/dist/css/bootstrap-reboot.min.css";
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~font-awesome/css/font-awesome.css";
+
+// Global variable
+$direction-bg: 90deg;
+$color-bg-from: #fcf8f1;
+$color-bg-to: #fff;
+$font-color: #60472e;
+
+
+// Nav section
+$nav-font-color: #fff;
+$nav-font-color-hover: #60472e;
+$nav-direction-bg: 90deg;
+$nav-color-bg-from: #CE93D8 ;
+$nav-color-bg-to: #fff;
+
+// rate section
+$rate-font-color: #b4023f;
+
+// carousel
+$car-font-color: #fff;
+$car-bg-color: rgba(255,255,255,.5);
+
+
+h1 /* Utilisation de la police qu'on vient de définir sur les titres */
+{
+    font-family: 'LearningCurveProRegular', Arial, serif;
+}
+
+
+// Fonctions
+
+@mixin linear-gradient-bg($args...) {
+	 background-image: -o-linear-gradient($args);
+	 background-image: -moz-linear-gradient($args);
+	 background-image: -webkit-linear-gradient($args);
+	 background-image: linear-gradient($args);
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin shadow($arg, $blur, $spread, $color) {
+	-moz-box-shadow: $arg $arg $blur $spread $color;
+	-webkit-box-shadow: $arg $arg $blur $spread $color;
+	-o-box-shadow: $arg $arg $blur $spread $color;
+	box-shadow: $arg $arg $blur $spread $color;
+	filter:progid:DXImageTransform.Microsoft.Shadow(color='$color', Direction=135, Strength=5);
+}

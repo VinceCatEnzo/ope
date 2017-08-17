@@ -1,0 +1,55 @@
+@import "../../../global";
+@font-face {
+	font-family: "SnellRoundhandScript";
+	src: url('./SnellRoundhandScript.ttf');
+  font-style: italic;
+  font-weight: bold;
+}
+
+
+ .navbar {
+ 	@include linear-gradient-bg($direction-bg, $nav-color-bg-from,  $nav-color-bg-to);
+	 i {
+ 			margin-right: 0.3rem;
+ 		}
+ 	.navbar-brand {
+ 		color: $nav-font-color;
+ 		font-size: 1.2rem !important;
+ 		line-height: 2.27rem;
+ 		a {
+ 			color: $nav-font-color;
+ 		}
+ 		i {
+ 			font-size: 1.2rem;
+			padding-right: 0.1rem;
+ 		}
+ 		span {
+      font-family: SnellRoundhandScript;
+ 			font-weight:bold;
+ 			&:hover, &:focus {
+				 color: $nav-font-color-hover;
+			}
+ 		}
+ 	}
+	.navbar-items {
+	 	line-height: 2.05rem;
+		span {
+			 margin-right: 1.1rem;
+			 color: $nav-font-color;
+			 &:hover, &:focus {
+				 color: $nav-font-color-hover;
+			}
+		}
+
+		@media (min-width: 769px) {
+				height: 3rem;
+			}
+		}
+
+	@media (min-width: 769px) {
+		padding: 0 1.5rem 0 1.5rem ;
+	}
+}
+
+
+

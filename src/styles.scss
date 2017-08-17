@@ -1,0 +1,75 @@
+@import "global";
+
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+	@extend html;
+	@include linear-gradient-bg($direction-bg, $color-bg-from,  $color-bg-to);
+	color: $font-color;
+  	font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+  	h1, h2, h3, h4, h5, h6 {
+		  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+	}
+  	hr {
+	  border-width: 2px;
+	  max-width: 100%;
+	  .light {
+		  border-color: white;
+		}
+	}
+	.cursor {
+		cursor: pointer;
+	}
+	.btn {
+	  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+	  border: none;
+	  @include border-radius(20px);
+	  font-weight: 700;
+	  text-transform: uppercase;
+	}
+	.center {
+			text-align: center;
+			
+	}
+	.price {
+			color: $rate-font-color;
+	}
+	.justify {
+		text-align: justify;
+		}
+	.bold {
+		font-weight: bold;
+	}
+	.no-padding {
+	  padding: 0;
+	}
+	.list-none {
+		list-style-type: none;
+	}
+	.no-margin {
+	 margin: 0;
+	}
+
+	section {
+		padding-top: 2rem;
+	}
+	.modal-content {
+		.modal-body {
+			margin-top: 15px;
+		}
+		.padding-img {
+				padding: 0 15px 15px 15px;
+		}
+	}
+
+	.carousel-item {
+		text-align: center;
+	}
+
+}
+
+

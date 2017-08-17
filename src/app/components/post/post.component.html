@@ -1,0 +1,25 @@
+<!-- START THE FEATURETTES -->
+<div *ngFor="let soin of soins" class="border">
+	<section id="{{ soin.link }}" class="post">
+		<div class="row">
+			<div class="col-md-7 text-left">
+				<h2 class="featurette-heading">{{ soin.title }}</h2>
+				<p class="lead">{{ soin.texte }}</p>
+				<p>
+					<span class="price bold"><i class="fa fa-money" aria-hidden="true"></i>&nbsp;Tarif&nbsp;:&nbsp;{{ soin.price | number:'1.2' }}&nbsp; <i class="fa fa-eur" aria-hidden="true"></i></span>
+				</p>
+				<p>
+					<i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;Durée&nbsp;:&nbsp;{{ soin.time }}
+				</p>
+			</div>
+			<div class="col-md-5 text-center">
+				<a class="" routerLink="{{ soin.link }}"> 
+					<img
+						class="img-thumbnail img-fluid mx-auto"
+						data-src="{{ soin.image }}" alt="Generic placeholder image">
+					</a>
+			</div>
+
+		</div>
+	</section>
+</div>

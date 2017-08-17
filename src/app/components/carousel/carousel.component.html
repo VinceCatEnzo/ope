@@ -1,0 +1,15 @@
+<div class="carousel slide" data-ride="carousel">
+	<ngb-carousel>
+			<ng-template ngbSlide *ngFor="let car of carousel">
+				<a (click)="animate()" href="#{{ car.link }}">
+					<img src="{{ car.nameImg }}" alt="Random slide" class="mx-auto">
+					<div class="carousel-caption">
+						<h3>
+							{{ car.title }}
+						</h3>
+						<p>{{ car.texte }}</p>
+					</div>
+				</a>	
+			</ng-template>
+	</ngb-carousel>
+</div>

@@ -1,0 +1,22 @@
+version: '2'
+services:
+  ubuntu-apache-ope:
+    build: 
+      context: httpd/.
+    image: ubuntu-apache-ope
+    container_name: cont-ubuntu-apache-ope
+    networks:
+      - ope
+    environment:
+      APP_URL_OPE: www.aux-petits-soins-destelle.fr
+      APP_ROOT_OPE: /var/www/ope/dist
+      APACHE_LOG_DIR: /var/log/apache2
+      APACHE_LOG_DIR: /var/log/apache2
+    volumes: 
+      - /var/www/lab/angular:/var/www:ro
+    ports:
+      - "80:80"
+      - "443:443"
+    restart: always
+networks:
+  ope:

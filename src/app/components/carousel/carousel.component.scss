@@ -1,0 +1,46 @@
+@import "../../../global"; 
+
+.carousel {
+	margin-top: 4.5rem;
+	margin-bottom: 4rem;
+					img {
+						width: 100%;
+					    height: 25rem;	 	
+					}
+				.carousel-caption {
+					color: $car-font-color;
+					font-weight: bold;
+					z-index: 10;
+					a {
+						color: $car-font-color;
+						text-decoration: none;
+					}
+					h3 {
+						font-size: 1rem;
+						line-height: 2rem;
+						font-weight: bold;
+					}
+					p {
+						font-size: 0.85rem;
+						line-height: 2rem;
+					}
+				}
+
+	@media (min-width: 769px) {
+					img {
+						width: 95%;
+						height: 37rem;
+					}
+				.carousel-caption {
+					p {
+							font-size: 1.75rem;
+							line-height: 3rem;
+					}
+					h3 {
+						font-size: 2.5rem;
+						line-height: 2rem;
+						font-weight: bold;
+					}
+				}
+			}
+}
