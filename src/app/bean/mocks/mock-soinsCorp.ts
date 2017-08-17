@@ -3,7 +3,7 @@ import { Soins } from '../soins';
 export const SOINSCORP: Soins[] = [
   {
     id: 1,
-    image: 'assets/carousel-yumifeet.jpg',
+    image: 'assets/tarif_car.jpg',
     title: 'Soin du dos',
     texte: 'Véritable soin purifiant et relaxant, le soin du dos se déroule comme un soin visage : gommage, vapeur, extraction des comédons (points noirs), enveloppement et se termine par un massage relaxant de 20mn.',
     link: 'cor1',

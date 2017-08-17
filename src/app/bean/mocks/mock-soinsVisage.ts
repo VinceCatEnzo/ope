@@ -3,7 +3,7 @@ import { Soins } from '../soins';
 export const SOINSVISAGE: Soins[] = [
   {
     id: 1,
-    image: 'assets/DSC08964.JPG',
+    image: 'assets/flower.jpg',
     title: 'Soin lumineux express',
     texte: 'Le soin coup d\'éclat est parfait pour les plus pressées. Il est composé d\'un démaquillage, nettoyage, gommage, vapeur, extraction des comédons (points noirs), masque et application d\'une crème de jour.',
     link: 'sv1',

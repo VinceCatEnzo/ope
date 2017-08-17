@@ -29,6 +29,9 @@ h1 /* Utilisation de la police qu'on vient de définir sur les titres */
     font-family: 'LearningCurveProRegular', Arial, serif;
 }
 
+a:focus {
+	color: $color-bg-to;
+}
 
 // Fonctions
 

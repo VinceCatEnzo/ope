@@ -21,7 +21,7 @@ export const CAROUSEL: Carousel[] = [
     link: 'body-care'
   }, {
     id: 4,
-    nameImg: 'assets/tarif_car.jpg',
+    nameImg: 'assets/flower2.jpg',
     title: 'Tarifs',
     texte: 'Voir l\'ensemble des tarifs',
     link: 'epilation'
