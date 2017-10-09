@@ -11,12 +11,12 @@ export const CAROUSEL: Carousel[] = [
     id: 2,
     nameImg: 'assets/carousel/contact.JPG',
     title: 'Contactez moi',
-    texte: 'Retrouvé tous les elements pour me contacter',
+    texte: 'Retrouvez tous les éléments pour me contacter',
     link: 'contact'
   }, {
     id: 3,
     nameImg: 'assets/carousel/soinscorp.JPG',
-    title: 'Soins du corp',
+    title: 'Soins du corps',
     texte: 'Voir l\'ensemble des tarifs',
     link: 'body-care'
   }, {
