@@ -5,18 +5,19 @@
 		</button>
 		<div class="collapse navbar-collapse" [ngbCollapse]="isCollapsed">
 			<a class="navbar-brand" href="#nav">
-				<span (click)="setCollapsed()"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;Aux petits soins d'Estelle</span>
+				<span (click)="setCollapsed()"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;Aux petits soins d'Estelle </span>
+				<small> - 18 rue Marchand 91100 Corbeil-Essonnes</small>
 			</a>
 			<ul class="navbar-nav navbar-items mr-auto mt-2 mt-lg-0">
 				<li class="nav-item"><a class="nav-link" (click)="setCollapsed()" href="tel:{{mobileNumber}}"><span><i class="fa fa-mobile fa-lg" aria-hidden="true"></i>&nbsp;Appelez</span></a></li>
+				<li class="nav-item"><a class="nav-link" (click)="setCollapsed()" routerLink="/" fragment="contact"><span><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;Contact</span></a></li>
 				<li class="nav-item"><a class="nav-link" (click)="setCollapsed()" routerLink="/" fragment="rate"><span><i class="fa fa-eur" aria-hidden="true"></i>&nbsp;Tarifs</span></a></li>
 				<li class="nav-item"><a class="nav-link" (click)="setCollapsed()" routerLink="/" fragment="epilation"><span><i class="fa fa-asterisk" aria-hidden="true"></i>&nbsp;Epilations</span></a></li>
 				<li class="nav-item"><a class="nav-link" (click)="setCollapsed()" routerLink="/" fragment="body-care"><span><i class="fa fa-envira" aria-hidden="true"></i>&nbsp;Soins</span></a></li>
-				<li class="nav-item"><a class="nav-link" (click)="setCollapsed()" routerLink="/" fragment="contact"><span><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;Contact</span></a></li>
 			</ul>
 		</div>
 	</nav>
 </section>
-<div [@routeAnimation] = "isAnimated">
-	<router-outlet ></router-outlet>
+<div [@routeAnimation]="isAnimated">
+	<router-outlet></router-outlet>
 </div>

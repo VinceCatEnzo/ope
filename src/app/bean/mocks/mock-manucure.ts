@@ -11,7 +11,7 @@ export const SOINSMANUCURE: Soins[] = [
     time: '45 minutes'
   }, {
     id: 2,
-    image: 'assets/manucure/xx.JPG',
+    image: '',
     title: 'Beauté des mains',
     texte: 'Démaquillage, limage, traitement des cuticules, pose de base',
     link: 'manu2',
@@ -19,7 +19,7 @@ export const SOINSMANUCURE: Soins[] = [
     time: '45 minutes'
   }, {
     id: 3,
-    image: 'assets/manucure/xx.JPG',
+    image: '',
     title: 'Beauté des pieds',
     texte: 'Démaquillage, limage, traitement des cuticules, pose de base',
     link: 'manu3',

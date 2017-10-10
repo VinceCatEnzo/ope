@@ -24,7 +24,7 @@
 			padding-right: 0.1rem;
  		}
  		span {
-      font-family: SnellRoundhandScript;
+      		font-family: SnellRoundhandScript;
  			font-weight:bold;
  			&:hover, &:focus {
 				 color: $nav-font-color-hover;
@@ -41,12 +41,12 @@
 			}
 		}
 
-		@media (min-width: 769px) {
+		@media (min-width: 1000px) {
 				height: 3rem;
 			}
 		}
 
-	@media (min-width: 769px) {
+	@media (min-width: 1000px) {
 		padding: 0 1.5rem 0 1.5rem ;
 	}
 }
