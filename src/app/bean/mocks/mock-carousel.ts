@@ -11,7 +11,7 @@ export const CAROUSEL: Carousel[] = [
     id: 2,
     nameImg: 'assets/carousel/contact.JPG',
     title: 'Contactez moi',
-    texte: 'Retrouvez tous les éléments pour me contacter',
+    texte: 'Vous pouvez me joindre au 07.69.85.71.43 (SMS de préférence),  m\'envoyer un mail : optitssoinsdestelle@gmail.com ou prendre directement rendez-vous en ligne ICI',
     link: 'contact'
   }, {
     id: 3,

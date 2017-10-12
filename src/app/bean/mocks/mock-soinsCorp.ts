@@ -24,7 +24,7 @@ export const SOINSCORP: Soins[] = [
     texte: 'Souvent considéré comme la dernière partie du corps à se détendre, masser le visage s\'avère souvent aussi relaxant qu\'une détente complète.',
     link: 'cor3',
     price: 25,
-    time: '15 minutes'
+    time: '20 minutes'
   }, {
     id: 4,
     image: 'assets/soins-corp/cor2.JPG',
